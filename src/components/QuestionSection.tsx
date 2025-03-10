@@ -9,7 +9,7 @@ const bebasNeue = Bebas_Neue({
 
 export default function QuestionSection() {
   return (
-    <section className="bg-[#001457] text-white min-h-[400px] py-10 md:py-20 flex flex-col justify-center">
+    <section className="bg-[#001457] text-white min-h-[400px] py-10 px-10 md:py-20 flex flex-col justify-center">
       <div className="max-w-4xl mx-auto text-center space-y-8">
         <h2 className={`text-2xl md:text-7xl font-black text-[#0439E0] tracking-wide drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] ${bebasNeue.className}`} 
           style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}>

@@ -27,7 +27,7 @@ const OurRentalsSection = () => {
             <img src="/Se-habla-español.avif" alt="Se habla español" className="h-[79px] w-auto" />
           </div>
           <div className="absolute bottom-[-150px] left-1/2 transform -translate-x-1/2 md:hidden scale-200">
-            <img src="/1tonac.avif" alt="1 Ton AC Unit" className="w-max h-max" />
+            <img src="/1tonac.avif" alt="1 Ton AC Unit" className="w-max h-max max-h-[200px]" />
           </div>
         </div>
       </div> 
