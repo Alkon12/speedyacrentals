@@ -1,5 +1,11 @@
 import React from 'react';
 import { Phone } from 'lucide-react';
+import { Bebas_Neue } from 'next/font/google';
+
+const bebasNeue = Bebas_Neue({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 const ACServiceHero = () => {
   return (
@@ -31,20 +37,20 @@ const ACServiceHero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Headline */}
           <div className="mb-6">
-            <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-2">
+            <h1 className={`text-5xl md:text-7xl font-extrabold text-white mb-2 ${bebasNeue.className}`}>
               THE QUICKEST SERVICE
             </h1>
-            <h2 className="text-5xl md:text-7xl font-black text-[#001457] mb-4 drop-shadow-lg">
+            <h2 className={`text-5xl md:text-7xl font-black text-[#001457] mb-4 drop-shadow-lg ${bebasNeue.className}`}>
               IN LOS ANGELES
             </h2>
           </div>
 
           {/* Subheading */}
           <div className="mb-8">
-            <h3 className="text-4xl md:text-6xl font-bold text-white mb-2">
+            <h3 className={`text-4xl md:text-6xl font-bold text-white mb-2 ${bebasNeue.className}`}>
               NEED AN A/C
             </h3>
-            <h3 className="text-4xl md:text-6xl font-black text-[#001457] drop-shadow-lg">
+            <h3 className={`text-4xl md:text-6xl font-black text-[#001457] drop-shadow-lg ${bebasNeue.className}`}>
               QUICKLY??
             </h3>
           </div>
@@ -60,7 +66,7 @@ const ACServiceHero = () => {
         </div>
 
           {/* Call to action */}
-          <p className="text-xl md:text-2xl text-white font-medium mb-6">
+          <p className="text-xl md:text-3xl text-white font-bold mb-6 ">
             For delivery and set up within a few hours give us a call!
           </p>
 

@@ -8,7 +8,7 @@ import ContactButton from './ContactButton';
 
 const NAV_ITEMS = [
   { label: 'Our Rentals', href: '/our-rentals' },
-  { label: "FAQ's", href: '/faq' },
+  { label: "FAQ's", href: '/faq-s' },
   { label: 'Contact', href: '/contact' },
 ];
 
@@ -50,7 +50,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-lg py-4 absolute w-full left-0 top-20 flex flex-col items-center space-y-4">
+        <div className="md:hidden bg-white shadow-lg py-4 absolute w-full left-0 top-20 flex flex-col items-center space-y-4 z-50">
           {NAV_ITEMS.map((item) => (
             <Link key={item.href} href={item.href} className="text-black hover:text-blue-600 transition text-lg">
               {item.label}

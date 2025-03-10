@@ -14,12 +14,12 @@ export default function OurRentalsPage() {
     <main>
       <OurRentalsSection />
       <div className="py-5 bg-white">
-        <ContactButton />
+        <ContactButton sizeClass="py-1 px-12"/>
       </div>
       <RentalInfoSection />
       <GallerySlider />
       <div className="py-5 bg-white">
-        <ContactButton />
+        <ContactButton sizeClass="py-1 px-12" />
       </div>
     </main>
   );

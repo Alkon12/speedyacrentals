@@ -1,4 +1,11 @@
 import React from 'react';
+import { Bebas_Neue } from 'next/font/google';
+
+const bebasNeue = Bebas_Neue({
+  weight: '400',
+  subsets: ['latin'],
+});
+
 
 const ACInventorySection = () => {
   return (
@@ -7,8 +14,8 @@ const ACInventorySection = () => {
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-5xl md:text-6xl font-black mb-6 relative inline-block">
-            <span className="text-blue-600">WE HAVE A BIG</span>
-            <div className="text-black drop-shadow-md">INVENTORY</div>
+            <span className={`text-[#013BDD] ${bebasNeue.className}`}>WE HAVE A BIG</span>
+            <div className={`text-black drop-shadow-md ${bebasNeue.className}`}>INVENTORY</div>
             <div className="absolute -inset-1 border-4 border-black rounded-lg -z-10 translate-y-2 translate-x-2"></div>
           </h2> 
         </div>
