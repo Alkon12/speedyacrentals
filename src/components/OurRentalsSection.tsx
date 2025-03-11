@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import ContactButton from './ContactButton';
 import { Bebas_Neue } from 'next/font/google';
+import Image from 'next/image';
 
 const bebasNeue = Bebas_Neue({
   weight: '400',
@@ -26,9 +26,16 @@ const OurRentalsSection = () => {
           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 hidden md:block">
             <img src="/Se-habla-español.avif" alt="Se habla español" className="h-[79px] w-auto" />
           </div>
-          <div className="absolute bottom-[-150px] left-1/2 transform -translate-x-1/2 md:hidden scale-200">
-            <img src="/1tonac.avif" alt="1 Ton AC Unit" className="w-max h-max max-h-[200px]" />
-          </div>
+          <div className="absolute bottom-[-400px] md:bottom-[-150px] left-1/2 -translate-x-1/2 md:hidden w-[90vw] max-w-[800px] h-[600px]">
+  <Image 
+    src="/1tonac.avif" 
+    alt="1 Ton AC Unit"
+    width={800}
+    height={600}
+    className="object-contain w-full h-full"
+    priority={true} // Si es imagen importante en la vista inicial
+  />
+</div>
         </div>
       </div> 
     </div> 
