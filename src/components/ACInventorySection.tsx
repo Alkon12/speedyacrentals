@@ -28,7 +28,7 @@ const ACInventorySection = () => {
               <img 
                 src="/1tonac.webp" 
                 alt="1 Ton AC Unit - MovinCool" 
-                className="h-auto max-h-96"
+                className="h-auto max-h-60"
               />
               <img 
                 src="/1.avif" 
@@ -44,7 +44,7 @@ const ACInventorySection = () => {
               <img 
                 src="/2tonac.webp" 
                 alt="2 Ton AC Unit - MovinCool" 
-                className="h-auto max-h-96"
+                className="h-auto max-h-60"
               />
               <img 
                 src="/2.avif" 
@@ -60,12 +60,12 @@ const ACInventorySection = () => {
               <img 
                 src="/3tonac.webp" 
                 alt="3 Ton AC Unit" 
-                className="h-auto max-h-96"
+                className="h-auto max-h-60"
               />
               <img 
                 src="/3.avif" 
                 alt="3 TON" 
-                className="absolute left-0 bottom-1/2 h-auto md:h-auto"
+                className="absolute left-[-25px] bottom-1/2 h-auto md:h-auto"
                 style={{ transform: 'translateX(20%)' }}
               />
             </div>
