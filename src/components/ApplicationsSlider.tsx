@@ -97,7 +97,7 @@ const ApplicationsSlider = () => {
   return (
     <div className="w-full py-16 bg-[#001457] overflow-hidden">
       {/* Title */}
-      <h2 className={`text-8xl font-bold text-center text-[#023CDF] mb-10 ${bebasNeue.className}`}>APPLICATIONS</h2>
+      <h2 className={`text-8xl font-bold text-center text-white mb-10 ${bebasNeue.className}`}>APPLICATIONS</h2>
       
       {/* Slider container */}
       <div className="relative max-w-4xl mx-auto px-10">
@@ -109,7 +109,7 @@ const ApplicationsSlider = () => {
             {applications.map((app, index) => (
               <div key={index} className="w-full flex-shrink-0 px-4">
                 <div className="bg-[#001457] border-2 border-white rounded-lg p-8 min-h-[320px] flex flex-col justify-center" style={{ backgroundImage: "url('/pattern.svg')" }}>
-                  <h3 className={`text-7xl font-bold text-white text-center mb-6 ${bebasNeue.className}`}>{app.title}</h3>
+                  <h3 className={`text-5xl md:text-7xl font-bold text-white text-center mb-6  ${bebasNeue.className}`}>{app.title}</h3>
                   <div className="space-y-5 mt-4">
                     {app.points.map((point, idx) => (
                       <p key={idx} className="text-white font-bold text-center text-lg">
