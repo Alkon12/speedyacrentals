@@ -26,7 +26,7 @@ const ACInventorySection = () => {
           <div className="w-full md:w-auto flex justify-center">
             <div className="relative">
               <img 
-                src="/1tonac.avif" 
+                src="/1tonac.webp" 
                 alt="1 Ton AC Unit - MovinCool" 
                 className="h-auto max-h-96"
               />
@@ -42,7 +42,7 @@ const ACInventorySection = () => {
           <div className="w-full md:w-auto flex justify-center">
             <div className="relative">
               <img 
-                src="/2tonac.avif" 
+                src="/2tonac.webp" 
                 alt="2 Ton AC Unit - MovinCool" 
                 className="h-auto max-h-96"
               />
@@ -58,7 +58,7 @@ const ACInventorySection = () => {
           <div className="w-full md:w-auto flex justify-center">
             <div className="relative">
               <img 
-                src="/3tonac.avif" 
+                src="/3tonac.webp" 
                 alt="3 Ton AC Unit" 
                 className="h-auto max-h-96"
               />
