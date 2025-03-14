@@ -92,7 +92,7 @@ export default function FaqAccordion() {
               </div>
               <div data-hook="titleContainer">
                 <div data-itemprop="name">
-                  <h3 className="flex-1 text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors question-title" id={`title_${item.id}`}>
+                  <h3 className="flex-1 text-lg font-semibold text-gray-800 dark:text-white group-hover:text-blue-600 transition-colors question-title" id={`title_${item.id}`}>
                 {item.question}
               </h3>
                 </div>
@@ -123,7 +123,7 @@ export default function FaqAccordion() {
             >
               <div className="p-6 pl-[104px] pr-12 bg-gray-50/20">
                 {item.answer.split('\n\n').map((paragraph, index) => (
-  <p key={index} className="text-gray-600 leading-relaxed mb-4 last:mb-0">
+  <p key={index} className="text-gray-600 dark:text-white leading-relaxed mb-4 last:mb-0">
     {paragraph}
   </p>
 ))}

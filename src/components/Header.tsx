@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
@@ -14,14 +14,32 @@ const NAV_ITEMS = [
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Detectar si el navegador está en modo oscuro
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsDarkMode(mediaQuery.matches);
+
+    // Escuchar cambios en el modo del sistema
+    const handleChange = (event: MediaQueryListEvent) => {
+      setIsDarkMode(event.matches);
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+    };
+  }, []);
 
   return (
-    <header className="w-full bg-white">
+    <header className=" w-full bg-white">
       <div className="container mx-auto px-4 md:px-8 lg:px-16 flex justify-between items-center h-20">
-        {/* Logo */}
+        {/* Logo dinámico */}
         <Link href="/">
           <Image
-            src="/logo.avif"
+            src={isDarkMode ? "/logo2.png" : "/logo.avif"}
             alt="Portable AC Rentals Logo"
             width={226}
             height={88}
@@ -32,7 +50,7 @@ export default function Header() {
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-8 items-center">
           {NAV_ITEMS.map((item) => (
-            <Link key={item.href} href={item.href} className="text-black hover:text-[#1F23FA] transition">
+            <Link key={item.href} href={item.href} className={`${isDarkMode ? 'text-white' : 'text-black'} hover:text-[#1F23FA] transition`}>
               {item.label}
             </Link>
           ))}
@@ -41,7 +59,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-black"
+          className="md:hidden bg-white"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <X size={30} /> : <Menu size={30} />}
@@ -52,7 +70,7 @@ export default function Header() {
       {menuOpen && (
         <div className="md:hidden bg-white shadow-lg py-4 absolute w-full left-0 top-20 flex flex-col items-center space-y-4 z-50">
           {NAV_ITEMS.map((item) => (
-            <Link key={item.href} href={item.href} className="text-black hover:text-blue-600 transition text-lg">
+            <Link key={item.href} href={item.href} className="hover:text-blue-600 transition text-lg">
               {item.label}
             </Link>
           ))}

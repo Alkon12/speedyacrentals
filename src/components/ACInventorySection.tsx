@@ -9,7 +9,7 @@ const bebasNeue = Bebas_Neue({
 
 const ACInventorySection = () => {
   return (
-    <div className="w-full bg-gray-100 pb-1">
+    <div className="w-full bg-white pb-1">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="text-center">

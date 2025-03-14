@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import ACImageCard from './ACImageCard';
 
 const RentalInfoSection = () => {
   return (
@@ -13,26 +14,32 @@ const RentalInfoSection = () => {
 
         {/* Mobile Layout */}
         <div className="md:hidden flex flex-col items-center gap-8">
-          <img 
-            src="/1-Naturally-Vain-PMax-Rentals.avif" 
-            alt="Naturally Vain PMax Rentals 1" 
-            className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+          <ACImageCard 
+            imageSrc="/1tonac.avif" 
+            altText="1 Ton Air Conditioner"
+            tonnage="1 TON"
+            details='<span class="text-[#1F23FA]">12,000 </span>BTU <span class="text-[#1F23FA]">| 115 </span>Voltaje'
+            coverage="COVERS 400 SQUARE FEET OF COOLING AREA"
           />
-          <img 
-            src="/2-Naturally-Vain-PMax-Rentals.avif" 
-            alt="Naturally Vain PMax Rentals 2" 
-            className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+          <ACImageCard 
+            imageSrc="/2tonac.avif" 
+            altText="2 Ton Air Conditioner"
+            tonnage="2 TON"
+            details='<span class="text-[#1F23FA]">24,000 </span>BTU <span class="text-[#1F23FA]">| 1 </span>Phase <span class="text-[#1F23FA]">| 208/230 </span> Voltaje'
+            coverage="COVERS 800 SQUARE FEET OF COOLING AREA"
           />
-          <img 
-            src="/3-Naturally-Vain-PMax-Rentals.avif" 
-            alt="Naturally Vain PMax Rentals 3" 
-            className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+          <ACImageCard 
+            imageSrc="/3tonac.avif" 
+            altText="3 Ton Air Conditioner"
+            tonnage="3 TON"
+            details='<span class="text-[#1F23FA]">36,000 </span>BTU <span class="text-[#1F23FA]">| 1 </span>Phase <span class="text-[#1F23FA]">| 208/230 </span> Voltaje'
+            coverage="COVERS 1200 SQUARE FEET OF COOLING AREA"
           />
         </div>
 
         {/* Desktop Layout */}
         <div 
-          className="hidden md:block w-full h-[300px] relative overflow-hidden rounded-lg"
+          className="hidden md:block w-full h-[300px] relative rounded-lg"
           style={{
             backgroundImage: "url('/MarcaAgua.avif')",
             backgroundSize: 'cover',
@@ -42,24 +49,30 @@ const RentalInfoSection = () => {
         >
           <div className="absolute inset-0 flex justify-center items-center gap-12 px-16">
             <div className="w-1/3">
-              <img 
-                src="/1-Naturally-Vain-PMax-Rentals.avif" 
-                alt="Naturally Vain PMax Rentals 1" 
-                className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+              <ACImageCard 
+                imageSrc="/1tonac.avif" 
+                altText="1 Ton Air Conditioner"
+                tonnage="1 TON"
+                details='<span class="text-[#1F23FA]">12,000 </span>BTU <span class="text-[#1F23FA]">| 115 </span>Voltaje'
+                coverage="COVERS 400 SQUARE FEET OF COOLING AREA"
               />
             </div>
             <div className="w-1/3">
-              <img 
-                src="/2-Naturally-Vain-PMax-Rentals.avif" 
-                alt="Naturally Vain PMax Rentals 2" 
-                className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+              <ACImageCard 
+                imageSrc="/2tonac.avif" 
+                altText="2 Ton Air Conditioner"
+                tonnage="2 TON"
+                details='<span class="text-[#1F23FA]">24,000 </span>BTU <span class="text-[#1F23FA]">| 1 </span>Phase <span class="text-[#1F23FA]">| 208/230 </span> Voltaje'
+                coverage="COVERS 800 SQUARE FEET OF COOLING AREA"
               />
             </div>
             <div className="w-1/3">
-              <img 
-                src="/3-Naturally-Vain-PMax-Rentals.avif" 
-                alt="Naturally Vain PMax Rentals 3" 
-                className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+            <ACImageCard 
+                imageSrc="/3tonac.avif" 
+                altText="3 Ton Air Conditioner"
+                tonnage="3 TON"
+                details='<span class="text-[#1F23FA]">36,000 </span>BTU <span class="text-[#1F23FA]">| 1 </span>Phase <span class="text-[#1F23FA]">| 208/230 </span> Voltaje'
+                coverage="COVERS 1200 SQUARE FEET OF COOLING AREA"
               />
             </div>
           </div>
