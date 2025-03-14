@@ -39,20 +39,25 @@ export default function Header() {
         {/* Logo dinámico */}
         <Link href="/">
           <Image
-            src={isDarkMode ? "/logo2.png" : "/logo.avif"}
-            alt="Portable AC Rentals Logo"
-            width={226}
-            height={88}
-            className="h-auto w-40 md:w-56"
-          />
+    src="/logo.avif"
+    alt="Portable AC Rentals Logo"
+    width={226}
+    height={88}
+    className="h-auto w-40 md:w-56 dark:hidden"
+  />
+  <Image
+    src="/logo2.png"
+    alt="Portable AC Rentals Logo"
+    width={226}
+    height={88}
+    className="h-auto w-40 md:w-56 hidden dark:block"
+  />
         </Link>
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-8 items-center">
           {NAV_ITEMS.map((item) => (
-            <Link key={item.href} href={item.href} className={`${isDarkMode ? 'text-white' : 'text-black'} hover:text-[#1F23FA] transition`}>
-              {item.label}
-            </Link>
+            <Link key={item.href} href={item.href} className="text-black hover:text-[#1F23FA] transition">{item.label}</Link>
           ))}
           <ContactButton />
         </nav>
