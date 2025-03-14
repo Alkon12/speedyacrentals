@@ -14,7 +14,7 @@ export default function Home() {
       <ACInventorySection />
       <ImageSlider />
       <ApplicationsSlider />
-      <div className="py-5 bg-white">
+      <div className="py-5 bg-white dark:bg-black">
         <ContactButton />
       </div>
     </main>

@@ -12,7 +12,7 @@ const bebasNeue = Bebas_Neue({
 const ContactUsSection = () => {
   return (
     <div className="w-full flex flex-col items-center">
-      <div className="w-full min-h-[700px] py-10 md:h-[700px] bg-white flex flex-col items-center justify-center">
+      <div className="w-full min-h-[700px] py-10 md:h-[700px] bg-white dark:bg-black flex flex-col items-center justify-center">
         {/* Header */}
         <div className="w-full max-w-6xl px-6 md:px-12 md:mb-[-50px] z-10">
           <h2 className={`text-7xl md:text-8xl font-bold text-[#0037DE] text-center md:text-left md:ml-15 ${bebasNeue.className}`}>

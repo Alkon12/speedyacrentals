@@ -9,13 +9,13 @@ const bebasNeue = Bebas_Neue({
 
 const ACInventorySection = () => {
   return (
-    <div className="w-full bg-white pb-1">
+    <div className="w-full bg-white dark:bg-black pb-1">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-5xl md:text-6xl font-black mb-6 relative inline-block">
             <span className={`text-[#013BDD] ${bebasNeue.className}`}>WE HAVE A BIG</span>
-            <div className={`text-black drop-shadow-md ${bebasNeue.className}`}>INVENTORY</div>
+            <div className={`text-black dark:text-white drop-shadow-md ${bebasNeue.className}`}>INVENTORY</div>
             <div className="absolute -inset-1 border-4 border-black rounded-lg -z-10 translate-y-2 translate-x-2"></div>
           </h2> 
         </div>

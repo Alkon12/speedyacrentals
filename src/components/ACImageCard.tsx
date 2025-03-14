@@ -32,8 +32,8 @@ export default function ACImageCard({
 
       {/* Texto */}
       <div className="text-center mt-1 leading-snug">
-        <p className="text-2xl font-bold text-[#000051]">{tonnage}</p>
-        <p className="text-lg font-bold text-[#000051] mt-[-5px]" dangerouslySetInnerHTML={{ __html: details }} />
+        <p className="text-2xl font-bold text-[#000051] dark:text-white">{tonnage}</p>
+        <p className="text-lg font-bold text-[#000051] dark:text-white mt-[-5px]" dangerouslySetInnerHTML={{ __html: details }} />
         <p className="text-sm text-gray-500 mt-[-5px] uppercase font-semibold">
           {coverage}
         </p>

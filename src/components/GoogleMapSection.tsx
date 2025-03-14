@@ -1,6 +1,6 @@
 const GoogleMapSection = () => {
   return (
-    <div className="w-full bg-white flex justify-center">
+    <div className="w-full bg-white dark:bg-black flex justify-center">
       <div className="w-full max-w-6xl h-[300px] md:mt-[-125px]">
         <iframe
           title="Google Maps"

@@ -4,7 +4,7 @@ import { Clock, Thermometer, Award } from 'lucide-react';
 
 const ACFeaturesSection = () => {
   return (
-    <div className="w-full py-16 bg-white">
+    <div className="w-full py-16 bg-white dark:bg-black">
       <div className="container mx-auto px-4">
         {/* Main Features Panel */}
         <div className="relative max-w-5xl mx-auto mb-12 shadow-xl rounded-lg overflow-hidden">

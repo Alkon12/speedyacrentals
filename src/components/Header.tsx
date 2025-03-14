@@ -34,7 +34,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className=" w-full bg-white">
+    <header className=" w-full bg-white dark:bg-black">
       <div className="container mx-auto px-4 md:px-8 lg:px-16 flex justify-between items-center h-20">
         {/* Logo dinámico */}
         <Link href="/">
@@ -57,14 +57,14 @@ export default function Header() {
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-8 items-center">
           {NAV_ITEMS.map((item) => (
-            <Link key={item.href} href={item.href} className="text-black hover:text-[#1F23FA] transition">{item.label}</Link>
+            <Link key={item.href} href={item.href} className="text-black dark:text-white hover:text-[#1F23FA] transition">{item.label}</Link>
           ))}
           <ContactButton />
         </nav>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden bg-white"
+          className="md:hidden bg-white dark:bg-black"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <X size={30} /> : <Menu size={30} />}
@@ -73,7 +73,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-lg py-4 absolute w-full left-0 top-20 flex flex-col items-center space-y-4 z-50">
+        <div className="md:hidden bg-white dark:bg-black shadow-lg py-4 absolute w-full left-0 top-20 flex flex-col items-center space-y-4 z-50">
           {NAV_ITEMS.map((item) => (
             <Link key={item.href} href={item.href} className="hover:text-blue-600 transition text-lg">
               {item.label}

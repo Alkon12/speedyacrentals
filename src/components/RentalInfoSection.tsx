@@ -5,10 +5,10 @@ import ACImageCard from './ACImageCard';
 
 const RentalInfoSection = () => {
   return (
-    <div className="w-full bg-white py-16">
+    <div className="w-full bg-white dark:bg-black py-16">
       <div className="container mx-auto px-4">
         {/* Title */}
-        <h2 className="text-4xl font-bold text-[#000051] text-center mb-12">
+        <h2 className="text-4xl font-bold text-[#000051] dark:text-white text-center mb-12">
           GOOD TO KNOW
         </h2>
 

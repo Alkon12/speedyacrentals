@@ -7,7 +7,7 @@ export default function Contact() {
     <main>
       <ContactUsSection />
       <GoogleMapSection />
-      <div className="py-5 bg-white">
+      <div className="py-5 bg-white dark:bg-black">
         <ContactButton sizeClass="py-1 px-12" />
       </div>
     </main>
