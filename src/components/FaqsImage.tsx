@@ -15,7 +15,7 @@ const FaqsImage: React.FC<FaqsImageProps> = ({
   mobileHeight = "h-[300px]",
 }) => {
   return (
-    <div className="w-full flex justify-center bg-gray-100">
+    <div className="w-full flex overflow-hidden justify-center bg-gray-100">
       {/* Desktop Image */}
       <div className={`w-full relative ${desktopHeight} hidden sm:block`}>
         <div className="relative w-full h-full">
@@ -23,7 +23,7 @@ const FaqsImage: React.FC<FaqsImageProps> = ({
             src={desktopSrc}
             alt="FAQ Desktop Hero Image"
             fill
-            className="object-cover rounded-lg shadow-lg"
+            className="object-cover shadow-lg"
             priority
           />
         </div>
@@ -31,15 +31,13 @@ const FaqsImage: React.FC<FaqsImageProps> = ({
 
       {/* Mobile Image */}
       <div className={`w-full relative ${mobileHeight} block sm:hidden`}>
-        <div className="relative w-full h-full">
-          <Image
-            src={mobileSrc}
-            alt="FAQ Mobile Hero Image"
-            fill
-            className="object-cover rounded-lg shadow-lg"
-            priority
-          />
-        </div>
+        <Image
+          src={mobileSrc}
+          alt="FAQ Mobile Hero Image"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
     </div>
   );

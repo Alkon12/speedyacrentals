@@ -10,7 +10,7 @@ const bebasNeue = Bebas_Neue({
 
 export default function FAQs() {
   return (
-    <main className="min-h-screen bg-white dark:bg-black">
+    <main className="bg-white dark:bg-black">
       <FaqsImage desktopSrc="/SERVICE/1.jpg" mobileSrc="/SERVICE/mobil1.jpeg" desktopHeight="h-[500px]" mobileHeight="h-[300px]" />
       <div className="text-center pt-12">
         <h1 className={`text-7xl font-bold text-[#0239E2] ${bebasNeue.className}`}>FAQ&apos;S</h1>
