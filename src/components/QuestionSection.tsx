@@ -24,10 +24,10 @@ export default function QuestionSection() {
         <div className="flex justify-center">
           <div className="relative w-[200px] h-[100px]">
             <Image
-              src="/Se-habla-español.avif"
+              src="/ETIQUETAS/5.png"
               alt="Se Habla Español"
               fill
-              className="object-contain"
+              className="object-contain transform scale-250"
               style={{ filter: 'drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3))' }}
             />
           </div>

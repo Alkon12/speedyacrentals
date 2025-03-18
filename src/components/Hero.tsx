@@ -47,7 +47,7 @@ const ACServiceHero = () => {
           <div className="absolute right-4 md:right-16 top-1/3 transform -rotate-12 z-30">
             <div className="w-28 h-28 md:w-40 md:h-40 animate-pulse">
               <img
-                src="/Hire.avif"
+                src="/ETIQUETAS/1.png"
                 alt="Hire Us Seal"
                 className="w-full h-full object-contain drop-shadow-lg"
               />

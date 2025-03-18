@@ -23,8 +23,8 @@ const OurRentalsSection = () => {
           <div className="absolute bottom-8 right-[-125px] hidden md:block">
             <img src="/2tonac.webp" alt="1 Ton AC Unit" className="w-auto h-auto max-h-75" />
           </div>
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 hidden md:block">
-            <img src="/Se-habla-español.avif" alt="Se habla español" className="h-[79px] w-auto" />
+          <div className="absolute bottom-[-75px] left-1/2 transform -translate-x-1/2 hidden md:block">
+            <img src="/ETIQUETAS/5.png" alt="Se habla español" className="h-auto w-auto" />
           </div>
           <div className="absolute bottom-[-520px] md:bottom-[-150px] left-1/2 -translate-x-1/2 md:hidden w-[90vw] max-w-[800px] h-[600px]">
             <Image 

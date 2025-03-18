@@ -31,10 +31,10 @@ const ACInventorySection = () => {
                 className="h-auto max-h-60"
               />
               <img 
-                src="/1.avif" 
+                src="/123 TONS/1.png" 
                 alt="1 TON" 
-                className="absolute left-0 bottom-1/2 h-auto md:h-auto"
-                style={{ transform: 'translateX(-5%)' }}
+                className="absolute left-0 bottom-1/3 h-[100px]"
+                style={{ transform: 'translateX(-10%)' }}
               />
             </div>
           </div>
@@ -47,10 +47,10 @@ const ACInventorySection = () => {
                 className="h-auto max-h-60"
               />
               <img 
-                src="/2.avif" 
+                src="/123 TONS/2.png" 
                 alt="2 TON" 
-                className="absolute left-0 bottom-1/2 h-auto md:h-auto"
-                style={{ transform: 'translateX(5%)' }}
+                className="absolute left-0 bottom-1/3 h-[100px]"
+                style={{ transform: 'translateX(-20%)' }}
               />
             </div>
           </div>
@@ -63,10 +63,10 @@ const ACInventorySection = () => {
                 className="h-auto max-h-60"
               />
               <img 
-                src="/3.avif" 
+                src="/123 TONS/3.png" 
                 alt="3 TON" 
-                className="absolute left-[-25px] bottom-1/2 h-auto md:h-auto"
-                style={{ transform: 'translateX(20%)' }}
+                className="absolute left-[-25px] bottom-1/3 h-[100px]"
+                style={{ transform: 'translateX(5%)' }}
               />
             </div>
           </div>
@@ -77,7 +77,7 @@ const ACInventorySection = () => {
           {/* Quality Badge with negative margin to overflow */}
           <div className="absolute left-8 bottom-0 w-32 md:w-40 transform -rotate-12 transition-all hover:rotate-0 duration-300 translate-y-35 z-20">
             <img 
-              src="/High.avif" 
+              src="/ETIQUETAS/2.png" 
               alt="High Quality Service Badge" 
               className="w-full h-auto drop-shadow-lg"
             />
